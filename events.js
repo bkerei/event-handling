@@ -41,7 +41,7 @@ function three () {
 // CREATE FUNCTION four HERE
 function four () {
   var four = document.getElementById('four')
-  four.addEventListener('mouseenter', makeBlue)
+  four.addEventListener('click', makeYellow)
   four.addEventListener('mouseleave', makeWhite)
 }
 
@@ -59,4 +59,8 @@ function makeGreen (evt) {
 }
 function makeOrange (evt) {
   evt.target.style.backgroundColor = 'orange'
+}
+
+function makeYellow (evt) {
+  evt.target.style.backgroundColor = 'yellow'
 }
